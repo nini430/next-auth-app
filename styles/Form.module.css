@@ -1,0 +1,34 @@
+.input_group {
+    @apply border rounded-xl flex px-2 items-center;
+}
+
+.input_text {
+    @apply w-full bg-slate-50 rounded-xl py-4 px-2;
+    @apply focus:outline-none;
+}
+
+
+
+.icon {
+    color:#555;
+    font-size:25px;
+}
+
+.input_text:focus + * {
+    color:indigo;
+}
+
+.input_text:not([type=email]) + * {
+    cursor:pointer;
+}
+
+.button {
+    @apply w-full py-5 px-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 text-white transition;
+}
+
+
+
+.custom_button {
+    @apply w-full flex justify-center items-center gap-2 bg-white py-5 px-2 border rounded-md cursor-pointer;
+}
+
